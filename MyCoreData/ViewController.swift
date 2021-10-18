@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }
     
     func saveUserData() {
-        let context = CoreDataController.sharedInstance.context
+        let context = CoreDataController.sharedInstance.mainContext
         
         let userEntity = NSEntityDescription.entity(forEntityName: "User", in: context)
         
